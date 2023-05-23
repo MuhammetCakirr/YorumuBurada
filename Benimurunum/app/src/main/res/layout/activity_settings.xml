@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:ignore="MissingConstraints">
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+       android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayarlar"
+                android:textStyle="italic|bold"
+                android:textSize="20sp"
+                android:textColor="@color/instant_app_badge">
+            </TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/hesaplayout"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/hesap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/accountsiyah">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hesap"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/hesap">
+
+        </TextView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+        </ImageView>
+    </RelativeLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.google.android.material.divider.MaterialDivider>
+    <RelativeLayout
+        android:id="@+id/bildirimlerlayout"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_notifications_24">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bildirimler"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/notification">
+
+        </TextView>
+
+        <ImageView
+           android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+        </ImageView>
+    </RelativeLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.google.android.material.divider.MaterialDivider>
+    <RelativeLayout
+        android:id="@+id/gizliliklayout"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/gizlilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_security_24">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gizlilik İlkesi"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/gizlilik">
+
+        </TextView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+        </ImageView>
+    </RelativeLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.google.android.material.divider.MaterialDivider>
+    <RelativeLayout
+        android:id="@+id/kullanımkosullayout"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/kullanımkosul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_troubleshoot_24">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanım Koşulları"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/kullanımkosul">
+
+        </TextView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+        </ImageView>
+    </RelativeLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.google.android.material.divider.MaterialDivider>
+    <RelativeLayout
+        android:id="@+id/girishareketlayout"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/giris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_insert_invitation_24">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Hareketleri"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/giris">
+
+        </TextView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+        </ImageView>
+    </RelativeLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.google.android.material.divider.MaterialDivider>
+    <RelativeLayout
+        android:id="@+id/hesappsillayout"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/hesappsil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/accountsiyah">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hesabımı Sil"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/hesappsil">
+
+        </TextView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+        </ImageView>
+    </RelativeLayout>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.google.android.material.divider.MaterialDivider>
+    <RelativeLayout
+        android:id="@+id/cikislayout"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/cikis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_logout_24">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çıkış Yap"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/cikis">
+
+        </TextView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24">
+        </ImageView>
+    </RelativeLayout>
+
+
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

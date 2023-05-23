@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/kullanicifoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ben"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/kullanicifoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invadersp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/kullaniciadi"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adam mısın Burak?"
+                    android:textColor="@color/Gray"
+                    android:layout_toRightOf="@+id/card"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/sonmesaj">
+
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16.20"
+                android:textColor="@color/black"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/sonmesajtarih">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

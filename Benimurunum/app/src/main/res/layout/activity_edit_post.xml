@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPost">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:id="@+id/postfoto"
+            android:src="@drawable/vazo">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/postsahibi"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="invadersp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+            </TextView>
+
+            <EditText
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/white"
+                android:hint="Çok iyi vazo"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/urunaciklama">
+            </EditText>
+
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            android:layout_margin="7dp"
+            android:backgroundTint="@color/floating_popup_divider_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ürün Detayları"
+                    android:gravity="center"
+                    android:textSize="19sp"
+                    android:textColor="@color/black">
+                </TextView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/sollayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ürün Adı:"
+                                android:textColor="@color/black">
+                            </TextView>
+
+                            <EditText
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:backgroundTint="@color/floating_popup_divider_light"
+                                android:hint="Dekoratif Ice Vazo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/urunadi">
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ürün Fiyatı:"
+                                android:textColor="@color/black">
+                            </TextView>
+                            <EditText
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:backgroundTint="@color/floating_popup_divider_light"
+                                android:hint="245 TL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/urunfiyati">
+                            </EditText>
+                           <!-- <TextView
+                                android:id="@+id/urunfiyati"
+                                android:layout_marginRight="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="245 TL"
+                                android:textStyle="bold">
+                            </TextView>
+-->
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alınan Mağaza:"
+                                android:textColor="@color/black">
+                            </TextView>
+                            <EditText
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:backgroundTint="@color/floating_popup_divider_light"
+                                android:hint="IKEA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/urunmagazasi">
+                            </EditText>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alınma Tarihi:"
+                                android:textColor="@color/black">
+                            </TextView>
+                            <EditText
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:backgroundTint="@color/floating_popup_divider_light"
+                                android:hint="10 Ağustos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/urunalınmatarihi">
+                            </EditText>
+                            <ImageView
+                                android:id="@+id/tarihsec"
+                                android:layout_gravity="center"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_baseline_date_range_24">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="7dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Online mı alındı:"
+                                android:textColor="@color/black">
+                            </TextView>
+                            <Switch
+                                android:id="@+id/onlinemi2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </Switch>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="İndirimde miydi:"
+                                android:textColor="@color/black">
+                            </TextView>
+                            <Switch
+                                android:id="@+id/indirimdemi2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </Switch>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Puan: "
+                                android:textColor="@color/black">
+                            </TextView>
+                            <EditText
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:backgroundTint="@color/floating_popup_divider_light"
+                                android:hint="8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/puan">
+                            </EditText>
+
+                         </LinearLayout>
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal">
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="Hangi Platform:"
+                                 android:textColor="@color/black">
+                             </TextView>
+                             <EditText
+                                 android:textStyle="bold"
+                                 android:textSize="14sp"
+                                 android:backgroundTint="@color/floating_popup_divider_light"
+                                 android:hint="Trendyol"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:id="@+id/hangiplatform">
+                             </EditText>
+                          </LinearLayout>
+                      </LinearLayout>
+                  </RelativeLayout>
+
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Kaydet"
+                android:id="@+id/btnkaydet"
+                android:layout_alignParentRight="true">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+      </LinearLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,268 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct"
+>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+      <ImageButton
+          android:id="@+id/backbutton"
+          android:backgroundTint="#C3FAF3F3"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_gravity="left">
+
+      </ImageButton>
+
+      <Button
+          android:id="@+id/btnpostpaylas"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_gravity="center"
+          android:layout_margin="10dp"
+          android:backgroundTint="#C3FAF3F3"
+          android:text="Paylaş"
+          android:textColor="@color/black"
+          android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <ImageView
+          android:layout_margin="10dp"
+          android:layout_gravity="center"
+          android:id="@+id/fotosec"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:src="@drawable/ic_baseline_add_24"
+          >
+      </ImageView>
+
+      <EditText
+          android:layout_gravity="center_vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/urunaciklamasi"
+          android:inputType="textMultiLine"
+          android:hint="Açıklama yaz...">
+      </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Ürün Adı: "
+          android:textSize="20sp"
+          android:textColor="@color/black">
+      </TextView>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/Urunadı"
+          android:inputType="textMultiLine">
+
+      </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Fiyatı: "
+          android:textSize="20sp"
+          android:textColor="@color/black">
+      </TextView>
+
+      <EditText
+          android:id="@+id/urunfiyat"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="right"
+          android:inputType="numberDecimal"
+          />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Mağazası: "
+          android:textSize="20sp"
+          android:textColor="@color/black">
+
+      </TextView>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/urunmagazasi"
+          android:inputType="textMultiLine">
+
+      </EditText>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+      <TextView
+          android:id="@+id/alinma"
+          android:layout_centerVertical="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Alınma Tarihi:"
+          android:textSize="20sp"
+          android:textColor="@color/black">
+
+      </TextView>
+
+      <TextView
+          android:id="@+id/tarih"
+        android:layout_marginLeft="5dp"
+          android:layout_centerVertical="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:layout_toRightOf="@+id/alinma">
+
+      </TextView>
+   <ImageView
+     android:layout_alignParentRight="true"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:src="@drawable/ic_baseline_date_range_24"
+     android:id="@+id/tarihsec">
+
+   </ImageView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Ürün İndirimdeydi"
+          android:textSize="20sp"
+          android:textColor="@color/black">
+
+      </TextView>
+
+
+      <Switch
+          android:id="@+id/urunindirimdemi"
+          android:layout_width="50dp"
+          android:layout_height="50dp">
+      </Switch>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Ürünü online satın aldım"
+          android:textSize="20sp"
+          android:textColor="@color/black">
+
+      </TextView>
+
+
+      <Switch
+          android:id="@+id/satinalinmasekli"
+          android:layout_width="50dp"
+          android:layout_height="50dp">
+      </Switch>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/platformlayout"
+        android:visibility="visible"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Platform: "
+          android:textSize="20sp"
+          android:textColor="@color/black">
+      </TextView>
+
+      <EditText
+          android:hint="online alındıysa doldurunuz.."
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/urunsatinalinanplatform"
+          android:inputType="textMultiLine">
+      </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Puanın: "
+          android:textSize="20sp"
+          android:textColor="@color/black">
+      </TextView>
+
+      <EditText
+          android:inputType="numberDecimal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/puan"
+          >
+      </EditText>
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>

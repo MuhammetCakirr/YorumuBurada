@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "373809190136",
+    "project_id": "urununburada-732aa",
+    "storage_bucket": "urununburada-732aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373809190136:android:9f8b193c8886959911d70d",
+        "android_client_info": {
+          "package_name": "com.muhammetcakir.benimurunum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373809190136-66bqupoevfl1jam2enqahpmmj3vngc2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHfZbj5jQkFc7iZmmYWuido7CK4HWzMuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373809190136-66bqupoevfl1jam2enqahpmmj3vngc2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

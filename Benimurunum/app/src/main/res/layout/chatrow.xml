@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_marginTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/digerkullanicilayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/mesajkullanicifoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ben"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                app:layout_constraintStart_toEndOf="@+id/kullanicifoto"
+                app:layout_constraintTop_toTopOf="@+id/kullanicifoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:backgroundTint="@color/white"
+                tools:ignore="MissingConstraints">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                <TextView
+                    android:padding="16dp"
+                    android:id="@+id/mesajleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Bu mesaj deneme messajıdır"
+                    tools:ignore="MissingConstraints">
+
+                </TextView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="7dp"
+                        android:id="@+id/mesajtarihleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16:20"
+                        android:layout_marginRight="7dp"
+                        tools:ignore="MissingConstraints">
+                    </TextView>
+                </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+      <!--  <androidx.cardview.widget.CardView
+            android:id="@+id/cardmesaj"
+            android:layout_marginRight="4dp"
+           app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:backgroundTint="@color/blue_btn_bg_color"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:padding="16dp"
+                android:id="@+id/benimmesaj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Bu mesaj deneme messajıdır"
+                tools:ignore="MissingConstraints">
+            </TextView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/mesajtarih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16:20"
+                    android:layout_marginRight="7dp"
+                    tools:ignore="MissingConstraints">
+                </TextView>
+            </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

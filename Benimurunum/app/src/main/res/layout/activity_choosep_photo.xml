@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".choosepPhoto"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/pfsec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profil Fotoğrafı Seç"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp">
+    </TextView>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:background="#C3FAF3F3"
+        android:gravity="center"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:cardCornerRadius="15dp">
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/foto"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="left"
+                android:src="@drawable/userphoto" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fotosec"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="Seç"
+        android:layout_gravity="center">
+    </Button>
+        <EditText
+            android:id="@+id/signupadsoyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="Ad Soyad" />
+
+        <EditText
+            android:id="@+id/signupemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/signupkullaniciadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="Kullanıcı Adı" />
+
+        <EditText
+            android:id="@+id/signupadsifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:hint="Şifre" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kayitolbutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Kayıt Ol"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Zaten hesabın var mı?"
+                android:textColor="@color/Gray"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/zatenhesabinvarmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="Giriş yap"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <!-- <RelativeLayout
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <TextView
+           android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaydol"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:id="@+id/Fotolukaydol">
+        </TextView>
+        <TextView
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fotoğrafsız Kayıt ol"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:id="@+id/fotosuzkaydol">
+        </TextView>
+    </RelativeLayout>
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

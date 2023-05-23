@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/searchlayout"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardpostuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            >
+            <ImageView
+                android:id="@+id/postuserfoto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/userphoto">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/cardpostuser"
+            android:text="invadersp"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+        </TextView>
+        <Button
+            android:id="@+id/kaldir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Kaldır"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp">
+        </Button>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

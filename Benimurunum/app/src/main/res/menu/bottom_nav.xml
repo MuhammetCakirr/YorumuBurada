@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Ana Sayfa"
+        android:id="@+id/anasayfa"
+        android:icon="@drawable/home"/>
+    <item android:title="Ara"
+        android:id="@+id/ara"
+        android:icon="@drawable/ic_baseline_search_24"/>
+    <item android:title="Oluştur"
+        android:id="@+id/olustur"
+        android:icon="@drawable/ic_baseline_add_24"/>
+    <item android:title="Profilim"
+        android:id="@+id/profilim"
+        android:icon="@drawable/ic_baseline_people_24"/>
+
+
+</menu>
